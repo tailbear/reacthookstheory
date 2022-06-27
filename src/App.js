@@ -1,7 +1,7 @@
 import HookBestEvent from "./pages/HookBestEvent";
 import HookTheory from "./pages/HookTheory";
 import AdvanceTheory from "./pages/AdvanceTheory";
-import { Route, Link, Navigate, BrowserRouter, Routes } from "react-router-dom";
+import { Route, Link, Navigate, BrowserRouter, Routes,useRoutes } from "react-router-dom";
 import Home from "./pages/home";
 import React, { useEffect } from "react";
 import StateDemo1 from "../src/pages/HookBestEvent/stateLesson/demo1";
@@ -27,6 +27,7 @@ import ContextDemo1 from "../src/pages/HookBestEvent/contextLesson";
 import ReducerDemo1 from "../src/pages/HookBestEvent/reducerLesson";
 import CustomHooks from "../src/pages/HookBestEvent/customHooks";
 import CustomHookPractice from "../src/pages/HookBestEvent/customHooks/Practice";
+import HooksMenu from "./pages/HookTheory/Menu";
 
 const history = createBrowserHistory();
 
@@ -55,10 +56,10 @@ function App() {
     <BrowserRouter>
     <div className="flex">
       { history.location.pathname.includes('HookBestEvent') && <Sider />}
+      { history.location.pathname.includes('HookTheory') && <HooksMenu/> }
       <div className="p-32 flex-1">
         <Routes >
           <Route path="/home" element={<Home />} />
-
           <Route path="/HookBestEvent" element={<StateDemo1 />} />
           <Route path="/HookBestEvent/state-demo1" element={<StateDemo1 />} />
           <Route path="/HookBestEvent/state-demo2" element={<StateDemo2 />} />
@@ -84,7 +85,13 @@ function App() {
             element={<CustomHookPractice />}
           />
 
+          <Route path="/HookTheory/demo1" element={<ContextDemo1/>}/>
+          <Route path="/HookTheory/demo2" element={<ReducerDemo1/>}/>
+          <Route path="/HookTheory/demo3" element={<CustomHooks/>}/>
           <Route path="/HookTheory" element={<HookTheory />} />
+
+
+
           <Route path="/AdvanceTheory" element={<AdvanceTheory />} />
           {/*<Route path="*" element={<Navigate to="/home" />} />*/}
           <Route path="/" element={<Home />} />
