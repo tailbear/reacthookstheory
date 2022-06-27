@@ -1,0 +1,14 @@
+.image {
+  background: url("./image.jpg") no-repeat 100%/100%;
+  width: 340px;
+  height: 163px;
+}
+
+  #btn {
+    background: blue!important;
+  }
+
+  .btn {
+    background: red!important;
+  }
+

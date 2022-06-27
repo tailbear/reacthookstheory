@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #D1D5DB;
+  padding: 16px 8px;
+  justify-content: space-between;
+  row-gap: 16px;
+}
+
+.item {
+  flex: 33.3%;
+  padding: 0 8px;
+}
+
+.content {
+  border: 1px solid #D1D5DB;
+  padding: 16px;
+  height: 100%;
+}

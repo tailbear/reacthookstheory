@@ -1,0 +1,80 @@
+/***** border-box 作用 *****/
+.left {
+  display: inline-block;
+  width: 50%;
+  background: #afc5e5;
+  min-height: 500px;
+}
+
+.right {
+  display: inline-block;
+  width: 50%;
+  background: #4fb0da;
+  min-height: 500px;
+}
+/**************************/
+
+/********外边距重叠*********/
+.top {
+  background: #afc5e5;
+  margin: 20px;
+}
+
+.bottom {
+  background: #4fb0da;
+  margin: 20px;
+}
+/**************************/
+
+/********双栏布局**********/
+.float-left {
+  background: #afc5e5;
+  float: left;
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height:300px;
+}
+
+.float-right {
+  background: #4fb0da;
+  margin: 20px;
+  height: 400px;
+}
+/**************************/
+
+.cssbox {
+  padding: 20px;
+}
+
+.title {
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 80%;
+}
+
+.left,
+.right,
+.top,
+.bottom {
+  padding: 20px;
+}
+
+.right span,
+.left span {
+  display: inline-block;
+  color: #00000065;
+  margin-bottom: 10px;
+}
+
+.question,
+.answer {
+  display: block;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}

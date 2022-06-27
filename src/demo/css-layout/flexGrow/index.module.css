@@ -1,0 +1,20 @@
+.image {
+    background: url("./flexGrow1.jpg") no-repeat 100%/100%;
+}
+
+.image1 {
+    width: 1180px;
+    height: 111px;
+}
+
+.image2 {
+    width: 1180px;
+    height: 116px;
+    background: url("./flexGrow2.jpg") no-repeat 100%/100%;
+}
+
+.image3 {
+    width: 1180px;
+    height: 110px;
+    background: url("./flexGrow3.jpg") no-repeat 100%/100%;
+}

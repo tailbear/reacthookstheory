@@ -1,0 +1,16 @@
+.item {
+  display: block;
+  text-align: center;
+}
+
+.item1 {
+  padding-top: 10px;
+}
+
+.item2 {
+  padding-top: 20px;
+}
+
+.item3 {
+  padding-top: 30px;
+}
