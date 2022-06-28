@@ -4,7 +4,7 @@ import { Link, Route, Routes } from "react-router-dom";
 
 const { SubMenu } = Menu;
 
-const rootSubmenuKeys = ["Why Hooks?", "Hooks Theory", 'Hooks Practice',];
+const rootSubmenuKeys = ["Why Hooks?", "UseState", 'Hooks Practice',];
 
 const HooksMenu = () => {
     const [openKeys, setOpenKeys] = React.useState(["useState"]);
@@ -20,38 +20,38 @@ const HooksMenu = () => {
 
     const whyHooksMenus = [
         {
-            url: "/HookTheory/demo1",
+            url: "/HookTheory/why-hooks/lesson1",
             name: "React组件设计理论",
         },
         {
-            url: "/HookTheory/demo2",
+            url: "/HookTheory/why-hooks/lesson2",
             name: "Class Component 复用困局",
         },
         {
-            url: "/HookTheory/demo4",
+            url: "/HookTheory/why-hooks/lesson3",
             name: "Function Component 缺失的功能",
         },
         {
-            url: "/HookTheory/demo4",
+            url: "/HookTheory/why-hooks/lesson4",
             name: "Function Component + Hook 黄金搭档",
         },
     ];
 
-    const hooksTheoryMenus = [
+    const useStateMenus = [
         {
-            url: "/HookBestEvent/useRef-demo1",
-            name: "useState",
+            url: "/HookTheory/useState/lesson1",
+            name: "what is useState?",
         },
         {
-            url: "/HookBestEvent/useRef-practice",
-            name: "useEffect",
+            url: "/HookTheory/useState/lesson2",
+            name: "为什么只能在函数组件里调用Hooks API",
         },
         {
-            url: "/HookBestEvent/useRef-practice",
+            url: "/HookTheory/useRef-practice",
             name: "useContext",
         },
         {
-            url: "/HookBestEvent/useRef-practice",
+            url: "/HookTheory/useRef-practice",
             name: "useReducer",
         },
     ];
@@ -73,15 +73,15 @@ const HooksMenu = () => {
                         </Menu.Item>
                     ))}
                 </SubMenu>
-                <SubMenu key="Hooks Theory" title="Hooks Theory">
-                    {hooksTheoryMenus.map(({ url, name }) => (
+                <SubMenu key="UseState" title="UseState">
+                    {useStateMenus.map(({ url, name }) => (
                         <Menu.Item key={name}>
                             <Link to={url}>{name}</Link>
                         </Menu.Item>
                     ))}
                 </SubMenu>
                 <SubMenu key="Hooks Practice" title="Hooks Practice">
-                    {hooksTheoryMenus.map(({ url, name }) => (
+                    {useStateMenus.map(({ url, name }) => (
                         <Menu.Item key={name}>
                             <Link to={url}>{name}</Link>
                         </Menu.Item>

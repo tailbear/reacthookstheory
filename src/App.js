@@ -28,6 +28,12 @@ import ReducerDemo1 from "../src/pages/HookBestEvent/reducerLesson";
 import CustomHooks from "../src/pages/HookBestEvent/customHooks";
 import CustomHookPractice from "../src/pages/HookBestEvent/customHooks/Practice";
 import HooksMenu from "./pages/HookTheory/Menu";
+import WhyHooksLesson1 from "./pages/HookTheory/WhyHooks/lesson1";
+import WhyHooksLesson2 from "./pages/HookTheory/WhyHooks/lesson2";
+import WhyHooksLesson3 from "./pages/HookTheory/WhyHooks/lesson3";
+import WhyHooksLesson4 from "./pages/HookTheory/WhyHooks/lesson4";
+import UseStateLesson1 from "./pages/HookTheory/UseState/lesson1";
+import UseStateLesson2 from "./pages/HookTheory/UseState/lesson2";
 
 const history = createBrowserHistory();
 
@@ -85,9 +91,12 @@ function App() {
             element={<CustomHookPractice />}
           />
 
-          <Route path="/HookTheory/demo1" element={<ContextDemo1/>}/>
-          <Route path="/HookTheory/demo2" element={<ReducerDemo1/>}/>
-          <Route path="/HookTheory/demo3" element={<CustomHooks/>}/>
+          <Route path="/HookTheory/why-hooks/lesson1" element={<WhyHooksLesson1/>}/>
+          <Route path="/HookTheory/why-hooks/lesson2" element={<WhyHooksLesson2/>}/>
+          <Route path="/HookTheory/why-hooks/lesson3" element={<WhyHooksLesson3/>}/>
+          <Route path="/HookTheory/why-hooks/lesson4" element={<WhyHooksLesson4/>}/>
+          <Route path="/HookTheory/useState/lesson1" element={<UseStateLesson1/>}/>
+          <Route path="/HookTheory/useState/lesson2" element={<UseStateLesson2/>}/>
           <Route path="/HookTheory" element={<HookTheory />} />
 
 
