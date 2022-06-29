@@ -37,6 +37,10 @@ import UseStateLesson2 from "./pages/HookTheory/UseState/lesson2";
 import UseStateLesson3 from "./pages/HookTheory/UseState/lesson3";
 import UseStateLesson4 from "./pages/HookTheory/UseState/lesson4";
 import UseEffectLesson1 from "./pages/HookTheory/UseEffect/lesson1";
+import UseEffectLesson2 from "./pages/HookTheory/UseEffect/lesson2";
+import UseEffectLesson3 from "./pages/HookTheory/UseEffect/lesson3";
+import UseReducerLesson from "./pages/HookTheory/UseReducer";
+import UseContextLesson from "./pages/HookTheory/UseContext";
 
 const history = createBrowserHistory();
 
@@ -159,6 +163,22 @@ function App() {
             <Route
               path="/HookTheory/useEffect/lesson1"
               element={<UseEffectLesson1 />}
+            />
+            <Route
+              path="/HookTheory/useEffect/lesson2"
+              element={<UseEffectLesson2 />}
+            />
+            <Route
+              path="/HookTheory/useEffect/lesson3"
+              element={<UseEffectLesson3 />}
+            />
+            <Route
+              path="/HookTheory/useContext/lesson1"
+              element={<UseContextLesson />}
+            />
+            <Route
+              path="/HookTheory/useReducer/lesson1"
+              element={<UseReducerLesson />}
             />
             <Route path="/HookTheory" element={<HookTheory />} />
 

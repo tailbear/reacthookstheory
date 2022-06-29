@@ -8,6 +8,8 @@ const rootSubmenuKeys = [
   "Why Hooks?",
   "UseState",
   "UseEffect",
+  "UseContext",
+  "UseReducer",
   "Hooks Practice",
 ];
 
@@ -80,6 +82,20 @@ const HooksMenu = () => {
     },
   ];
 
+  const useContextMenus = [
+    {
+      url: "/HookTheory/useContext/lesson1",
+      name: "useContext",
+    },
+  ];
+
+  const useReducerMenus = [
+    {
+      url: "/HookTheory/useReducer/lesson1",
+      name: "useEffect实现剖析",
+    },
+  ];
+
   return (
     <>
       <Menu
@@ -103,8 +119,22 @@ const HooksMenu = () => {
             </Menu.Item>
           ))}
         </SubMenu>
-        <SubMenu key="useEffect" title="useEffect">
+        <SubMenu key="UseEffect" title="UseEffect">
           {useEffectMenus.map(({ url, name }) => (
+            <Menu.Item key={name}>
+              <Link to={url}>{name}</Link>
+            </Menu.Item>
+          ))}
+        </SubMenu>
+        <SubMenu key="UseContext" title="UseContext">
+          {useContextMenus.map(({ url, name }) => (
+            <Menu.Item key={name}>
+              <Link to={url}>{name}</Link>
+            </Menu.Item>
+          ))}
+        </SubMenu>
+        <SubMenu key="UseReducer" title="UseReducer">
+          {useReducerMenus.map(({ url, name }) => (
             <Menu.Item key={name}>
               <Link to={url}>{name}</Link>
             </Menu.Item>
