@@ -34,6 +34,9 @@ import WhyHooksLesson3 from "./pages/HookTheory/WhyHooks/lesson3";
 import WhyHooksLesson4 from "./pages/HookTheory/WhyHooks/lesson4";
 import UseStateLesson1 from "./pages/HookTheory/UseState/lesson1";
 import UseStateLesson2 from "./pages/HookTheory/UseState/lesson2";
+import UseStateLesson3 from "./pages/HookTheory/UseState/lesson3";
+import UseStateLesson4 from "./pages/HookTheory/UseState/lesson4";
+import UseEffectLesson1 from "./pages/HookTheory/UseEffect/lesson1";
 
 const history = createBrowserHistory();
 
@@ -52,7 +55,7 @@ function App() {
         <div className="p-32 flex-1">
           <Routes>
             <Route path="/home" element={<Home />} />
-            <Route path="/HookBestEvent" element={<StateDemo1 />} />
+
             <Route path="/HookBestEvent/state-demo1" element={<StateDemo1 />} />
             <Route path="/HookBestEvent/state-demo2" element={<StateDemo2 />} />
             <Route path="/HookBestEvent/state-demo4" element={<StateDemo4 />} />
@@ -118,6 +121,7 @@ function App() {
               path="/HookBestEvent/customHooks-practice"
               element={<CustomHookPractice />}
             />
+            <Route path="/HookBestEvent" element={<StateDemo1 />} />
 
             <Route
               path="/HookTheory/why-hooks/lesson1"
@@ -135,6 +139,7 @@ function App() {
               path="/HookTheory/why-hooks/lesson4"
               element={<WhyHooksLesson4 />}
             />
+
             <Route
               path="/HookTheory/useState/lesson1"
               element={<UseStateLesson1 />}
@@ -142,6 +147,18 @@ function App() {
             <Route
               path="/HookTheory/useState/lesson2"
               element={<UseStateLesson2 />}
+            />
+            <Route
+              path="/HookTheory/useState/lesson3"
+              element={<UseStateLesson3 />}
+            />
+            <Route
+              path="/HookTheory/useState/lesson4"
+              element={<UseStateLesson4 />}
+            />
+            <Route
+              path="/HookTheory/useEffect/lesson1"
+              element={<UseEffectLesson1 />}
             />
             <Route path="/HookTheory" element={<HookTheory />} />
 
