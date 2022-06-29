@@ -1,12 +1,12 @@
 import HookBestEvent from "./pages/HookBestEvent";
 import HookTheory from "./pages/HookTheory";
 import AdvanceTheory from "./pages/AdvanceTheory";
-import { Route, Link, Navigate, BrowserRouter, Routes,useRoutes } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import React, { useEffect } from "react";
 import StateDemo1 from "../src/pages/HookBestEvent/stateLesson/demo1";
 import Sider from "../src/components/sider";
-import { createBrowserHistory } from 'history';
+import { createBrowserHistory } from "history";
 
 import StateDemo2 from "../src/pages/HookBestEvent/stateLesson/demo2";
 import StateDemo4 from "../src/pages/HookBestEvent/stateLesson/demo4";
@@ -38,75 +38,119 @@ import UseStateLesson2 from "./pages/HookTheory/UseState/lesson2";
 const history = createBrowserHistory();
 
 function App() {
-
   useEffect(() => {
-    history.listen(route => {
-          console.log(route,222)
-       });
-  }, [])
+    history.listen((route) => {
+      console.log(route, 222);
+    });
+  }, []);
 
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path='/home' element={<Home />} />
-    //     <Route path='/css-box' element={<CSSBox />} />
-    //     <Route path='/css-selector' element={<CSSSelector />} />
-    //     <Route path='/css-weight' element={<CSSWeight />} />
-    //     <Route path='/css-layout' element={<Demo4 />} />
-    //     <Route path='/position' element={<Position />} />
-    //     <Route path='/practice' element={<Practice />} />
-    //     <Route path='*' element={<Navigate to='/home' />} />
-    //   </Routes>
-    // </BrowserRouter>
-
     <BrowserRouter>
-    <div className="flex">
-      { history.location.pathname.includes('HookBestEvent') && <Sider />}
-      { history.location.pathname.includes('HookTheory') && <HooksMenu/> }
-      <div className="p-32 flex-1">
-        <Routes >
-          <Route path="/home" element={<Home />} />
-          <Route path="/HookBestEvent" element={<StateDemo1 />} />
-          <Route path="/HookBestEvent/state-demo1" element={<StateDemo1 />} />
-          <Route path="/HookBestEvent/state-demo2" element={<StateDemo2 />} />
-          <Route path="/HookBestEvent/state-demo4" element={<StateDemo4 />} />
-          <Route path="/HookBestEvent/state-demo5" element={<StateDemo5 />} />
-          <Route path="/HookBestEvent/state-Practice" element={<StatePractice />} />
-          <Route path="/HookBestEvent/effect-demo1" element={<EffectDemo1 />} />
-          <Route path="/HookBestEvent/effect-demo2" element={<EffectDemo2 />} />
-          <Route path="/HookBestEvent/effect-demo3" element={<EffectDemo3 />} />
-          <Route path="/HookBestEvent/effect-demo4" element={<EffectDemo4 />} />
-          <Route path="/HookBestEvent/effect-demo5" element={<EffectDemo5 />} />
-          <Route path="/HookBestEvent/useRef-demo1" element={<RefDemo1 />} />
-          <Route path="/HookBestEvent/useRef-practice" element={<RefPractice />} />
-          <Route path="/HookBestEvent/useMemo-demo1" element={<MemoDemo1 />} />
-          <Route path="/HookBestEvent/useCallback-demo1" element={<CallbackDemo1 />} />
-          <Route path="/HookBestEvent/useCallback-practice" element={<CallbackPractice />} />
-          <Route path="/HookBestEvent/useMemo-practice" element={<UseMemoPractice />} />
-          <Route path="/HookBestEvent/useContext-demo1" element={<ContextDemo1 />} />
-          <Route path="/HookBestEvent/useReducer-demo1" element={<ReducerDemo1 />} />
-          <Route path="/HookBestEvent/customHooks-demo1" element={<CustomHooks />} />
-          <Route
-            path="/HookBestEvent/customHooks-practice"
-            element={<CustomHookPractice />}
-          />
+      <div className="flex">
+        {history.location.pathname.includes("HookBestEvent") && <Sider />}
+        {history.location.pathname.includes("HookTheory") && <HooksMenu />}
+        <div className="p-32 flex-1">
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/HookBestEvent" element={<StateDemo1 />} />
+            <Route path="/HookBestEvent/state-demo1" element={<StateDemo1 />} />
+            <Route path="/HookBestEvent/state-demo2" element={<StateDemo2 />} />
+            <Route path="/HookBestEvent/state-demo4" element={<StateDemo4 />} />
+            <Route path="/HookBestEvent/state-demo5" element={<StateDemo5 />} />
+            <Route
+              path="/HookBestEvent/state-Practice"
+              element={<StatePractice />}
+            />
+            <Route
+              path="/HookBestEvent/effect-demo1"
+              element={<EffectDemo1 />}
+            />
+            <Route
+              path="/HookBestEvent/effect-demo2"
+              element={<EffectDemo2 />}
+            />
+            <Route
+              path="/HookBestEvent/effect-demo3"
+              element={<EffectDemo3 />}
+            />
+            <Route
+              path="/HookBestEvent/effect-demo4"
+              element={<EffectDemo4 />}
+            />
+            <Route
+              path="/HookBestEvent/effect-demo5"
+              element={<EffectDemo5 />}
+            />
+            <Route path="/HookBestEvent/useRef-demo1" element={<RefDemo1 />} />
+            <Route
+              path="/HookBestEvent/useRef-practice"
+              element={<RefPractice />}
+            />
+            <Route
+              path="/HookBestEvent/useMemo-demo1"
+              element={<MemoDemo1 />}
+            />
+            <Route
+              path="/HookBestEvent/useCallback-demo1"
+              element={<CallbackDemo1 />}
+            />
+            <Route
+              path="/HookBestEvent/useCallback-practice"
+              element={<CallbackPractice />}
+            />
+            <Route
+              path="/HookBestEvent/useMemo-practice"
+              element={<UseMemoPractice />}
+            />
+            <Route
+              path="/HookBestEvent/useContext-demo1"
+              element={<ContextDemo1 />}
+            />
+            <Route
+              path="/HookBestEvent/useReducer-demo1"
+              element={<ReducerDemo1 />}
+            />
+            <Route
+              path="/HookBestEvent/customHooks-demo1"
+              element={<CustomHooks />}
+            />
+            <Route
+              path="/HookBestEvent/customHooks-practice"
+              element={<CustomHookPractice />}
+            />
 
-          <Route path="/HookTheory/why-hooks/lesson1" element={<WhyHooksLesson1/>}/>
-          <Route path="/HookTheory/why-hooks/lesson2" element={<WhyHooksLesson2/>}/>
-          <Route path="/HookTheory/why-hooks/lesson3" element={<WhyHooksLesson3/>}/>
-          <Route path="/HookTheory/why-hooks/lesson4" element={<WhyHooksLesson4/>}/>
-          <Route path="/HookTheory/useState/lesson1" element={<UseStateLesson1/>}/>
-          <Route path="/HookTheory/useState/lesson2" element={<UseStateLesson2/>}/>
-          <Route path="/HookTheory" element={<HookTheory />} />
+            <Route
+              path="/HookTheory/why-hooks/lesson1"
+              element={<WhyHooksLesson1 />}
+            />
+            <Route
+              path="/HookTheory/why-hooks/lesson2"
+              element={<WhyHooksLesson2 />}
+            />
+            <Route
+              path="/HookTheory/why-hooks/lesson3"
+              element={<WhyHooksLesson3 />}
+            />
+            <Route
+              path="/HookTheory/why-hooks/lesson4"
+              element={<WhyHooksLesson4 />}
+            />
+            <Route
+              path="/HookTheory/useState/lesson1"
+              element={<UseStateLesson1 />}
+            />
+            <Route
+              path="/HookTheory/useState/lesson2"
+              element={<UseStateLesson2 />}
+            />
+            <Route path="/HookTheory" element={<HookTheory />} />
 
-
-
-          <Route path="/AdvanceTheory" element={<AdvanceTheory />} />
-          {/*<Route path="*" element={<Navigate to="/home" />} />*/}
-          <Route path="/" element={<Home />} />
-        </Routes>
+            <Route path="/AdvanceTheory" element={<AdvanceTheory />} />
+            {/*<Route path="*" element={<Navigate to="/home" />} />*/}
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
       </div>
-    </div>
     </BrowserRouter>
   );
 }

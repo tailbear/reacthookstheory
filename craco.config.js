@@ -24,16 +24,5 @@ module.exports = {
         use: "raw-loader",
       },
     ],
-    plugins: [
-      new copyWebpackPlugin({
-        patterns: [
-          {
-            from: path.resolve(__dirname, "./src/doc"), //想要复制的文件夹
-            to: "doc", //复制在哪个文件夹
-            globOptions: { ignore: [".*"] },
-          },
-        ],
-      }),
-    ],
   },
 };
