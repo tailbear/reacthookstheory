@@ -1,22 +1,43 @@
 import React from "react";
 import HooksMenu from "./Menu";
 import { Route, Routes } from "react-router-dom";
-import ReducerDemo1 from "../HookBestEvent/reducerLesson";
-import CustomHooks from "../HookBestEvent/customHooks";
 import WhyHooksLesson1 from "./WhyHooks/lesson1";
+import WhyHooksLesson2 from "./WhyHooks/lesson2";
+import WhyHooksLesson3 from "./WhyHooks/lesson3";
+import WhyHooksLesson4 from "./WhyHooks/lesson4";
+import UseStateLesson1 from "./UseState/lesson1";
+import UseStateLesson2 from "./UseState/lesson2";
+import UseStateLesson3 from "./UseState/lesson3";
+import UseStateLesson4 from "./UseState/lesson4";
+import UseEffectLesson1 from "./UseEffect/lesson1";
+import UseEffectLesson2 from "./UseEffect/lesson2";
+import UseEffectLesson3 from "./UseEffect/lesson3";
+import UseContextLesson from "./UseContext";
+import UseReducerLesson from "./UseReducer";
 
 const HookTheory = () => {
   return (
-    <div className="flex">
+    <>
       <HooksMenu />
-      <div className="p-32 flex-1">
+      <div className="p-32 flex-1 ml-40">
         <Routes>
-          <Route path="/HookTheory/demo1" element={<WhyHooksLesson1 />} />
-          <Route path="/HookTheory/demo2" element={<ReducerDemo1 />} />
-          <Route path="/HookTheory/demo3" element={<CustomHooks />} />
+          <Route path="why-hooks/lesson1" element={<WhyHooksLesson1 />} />
+          <Route path="why-hooks/lesson2" element={<WhyHooksLesson2 />} />
+          <Route path="why-hooks/lesson3" element={<WhyHooksLesson3 />} />
+          <Route path="why-hooks/lesson4" element={<WhyHooksLesson4 />} />
+
+          <Route path="useState/lesson1" element={<UseStateLesson1 />} />
+          <Route path="useState/lesson2" element={<UseStateLesson2 />} />
+          <Route path="useState/lesson3" element={<UseStateLesson3 />} />
+          <Route path="useState/lesson4" element={<UseStateLesson4 />} />
+          <Route path="useEffect/lesson1" element={<UseEffectLesson1 />} />
+          <Route path="useEffect/lesson2" element={<UseEffectLesson2 />} />
+          <Route path="useEffect/lesson3" element={<UseEffectLesson3 />} />
+          <Route path="useContext/lesson1" element={<UseContextLesson />} />
+          <Route path="useReducer/lesson1" element={<UseReducerLesson />} />
         </Routes>
       </div>
-    </div>
+    </>
   );
 };
 

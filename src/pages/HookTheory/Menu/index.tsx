@@ -14,7 +14,7 @@ const rootSubmenuKeys = [
 ];
 
 const HooksMenu = () => {
-  const [openKeys, setOpenKeys] = React.useState(["useState"]);
+  const [openKeys, setOpenKeys] = React.useState(["Why Hooks?"]);
 
   const onOpenChange = (keys) => {
     const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);

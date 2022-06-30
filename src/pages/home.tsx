@@ -5,12 +5,9 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div
-      className="flex flex-col justify-center items-center"
-      style={{ height: 800 }}
-    >
+    <div className="flex flex-1 flex-col justify-center items-center h-screen">
       <img src={logoIcon} alt="" style={{ height: 600, width: 1200 }} />
-      <div className="flex-1 justify-center items-center h-auto mt-80">
+      <div className="justify-center items-center h-auto mt-80">
         <Link to={"/HookBestEvent"} className="mr-36" id="hookBest">
           React Hooks最佳实践
         </Link>

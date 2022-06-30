@@ -4,7 +4,17 @@ import { Link, Route, Routes } from "react-router-dom";
 
 const { SubMenu } = Menu;
 
-const rootSubmenuKeys = ["useState", "useRef", "useEffect",'useMemo','useCallBack','useContext','useContext','useReducer','自定义Hook'];
+const rootSubmenuKeys = [
+  "useState",
+  "useRef",
+  "useEffect",
+  "useMemo",
+  "useCallBack",
+  "useContext",
+  "useContext",
+  "useReducer",
+  "自定义Hook",
+];
 
 const Sider = () => {
   const [openKeys, setOpenKeys] = React.useState(["useState"]);
@@ -128,7 +138,7 @@ const Sider = () => {
         mode="inline"
         openKeys={openKeys}
         onOpenChange={onOpenChange}
-        style={{ width: 210, height: "2000px"}}
+        style={{ width: 300, height: "2000px" }}
         theme="dark"
       >
         <SubMenu key="useState" title="useState">
