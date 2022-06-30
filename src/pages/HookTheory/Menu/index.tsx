@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "antd";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const { SubMenu } = Menu;
 
@@ -59,7 +59,7 @@ const HooksMenu = () => {
     },
     {
       url: "/HookTheory/useState/lesson4",
-      name: "practice",
+      name: "useStatePractice",
     },
   ];
 
@@ -77,8 +77,8 @@ const HooksMenu = () => {
       name: "清理副作用",
     },
     {
-      url: "/HookTheory/useEffect/lesson4",
-      name: "practice",
+      url: "/HookTheory/useEffect/practice",
+      name: "useEffectPractice",
     },
   ];
 
@@ -92,9 +92,15 @@ const HooksMenu = () => {
   const useReducerMenus = [
     {
       url: "/HookTheory/useReducer/lesson1",
-      name: "useEffect实现剖析",
+      name: "useReducer",
+    },
+    {
+      url: "/HookTheory/useReducer/practice",
+      name: "useReducerPractice",
     },
   ];
+
+  const practiceMenus = [];
 
   return (
     <>
@@ -141,7 +147,7 @@ const HooksMenu = () => {
           ))}
         </SubMenu>
         <SubMenu key="Hooks Practice" title="Hooks Practice">
-          {useStateMenus.map(({ url, name }) => (
+          {practiceMenus.map(({ url, name }) => (
             <Menu.Item key={name}>
               <Link to={url}>{name}</Link>
             </Menu.Item>
