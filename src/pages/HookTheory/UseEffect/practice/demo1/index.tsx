@@ -7,7 +7,7 @@ let lastDependencies;
 function useEffect(callback, dependencies) {
   if (lastDependencies) {
     let changed = !dependencies.every(
-      (item, index) => item == lastDependencies[index]
+      (item, index) => item === lastDependencies[index]
     );
     if (changed) {
       callback();

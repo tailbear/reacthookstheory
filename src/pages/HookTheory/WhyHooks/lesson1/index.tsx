@@ -1,25 +1,10 @@
-import React, { useCallback, useEffect, useRef } from "react";
-import { Divider, Typography } from "antd";
+import React from "react";
+import { Typography } from "antd";
 import "./index.css";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
-const useDebouncedEffect = (effect, delay, deps) => {
-  const callback = useCallback(effect, deps);
-
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      callback();
-    }, delay);
-    return () => {
-      clearTimeout(handler);
-    };
-  }, [callback, delay]);
-};
-
 const WhyHooksLesson1: React.FC = () => {
-  // useDebouncedEffect(() => window.location.reload(), 300, []);
-
   return (
     <Typography>
       <Title>React组件设计理论</Title>

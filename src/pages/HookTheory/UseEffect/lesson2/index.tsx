@@ -2,7 +2,7 @@ import React from "react";
 import { Typography } from "antd";
 import "./index.css";
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Text } = Typography;
 
 const UseEffectLesson2: React.FC = () => {
   return (
