@@ -16,6 +16,9 @@ import UseContextLesson from "./UseContext";
 import UseReducerLesson from "./UseReducer";
 import UseEffectPractice from "./UseEffect/practice";
 import UseReducerPractice from "./UseReducer/practice";
+import UseStatePractice from "./Practice/useState/practice";
+import UseCallbackPractice from "./Practice/useCallback/practice";
+import UseMemoPractice from "./Practice/useMemo/practice";
 
 const HookTheory = () => {
   return (
@@ -39,6 +42,14 @@ const HookTheory = () => {
           <Route path="useContext/lesson1" element={<UseContextLesson />} />
           <Route path="useReducer/lesson1" element={<UseReducerLesson />} />
           <Route path="useReducer/practice" element={<UseReducerPractice />} />
+          <Route path="practice/useState" element={<UseStatePractice />} />
+          {/*<Route path="practice/useEffect" element={<UseEffectPractice />} />*/}
+          <Route
+            path="practice/useCallback"
+            element={<UseCallbackPractice />}
+          />
+          <Route path="practice/useMemo" element={<UseMemoPractice />} />
+          <Route path="practice/useReducer" element={<UseReducerPractice />} />
         </Routes>
       </div>
     </>

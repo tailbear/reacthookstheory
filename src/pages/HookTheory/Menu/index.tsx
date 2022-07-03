@@ -100,7 +100,28 @@ const HooksMenu = () => {
     },
   ];
 
-  const practiceMenus = [];
+  const practiceMenus = [
+    {
+      url: "/HookTheory/practice/useState",
+      name: "useState",
+    },
+    {
+      url: "/HookTheory/practice/useEffect",
+      name: "useEffect",
+    },
+    {
+      url: "/HookTheory/practice/useCallback",
+      name: "useCallback",
+    },
+    {
+      url: "/HookTheory/practice/useMemo",
+      name: "useMemo",
+    },
+    {
+      url: "/HookTheory/practice/useReducer",
+      name: "useReducer",
+    },
+  ];
 
   return (
     <>

@@ -25,8 +25,14 @@ const UseStateLesson1: React.FC = () => {
             API的函数组件，返回的setter可以改变组件的状态，并且引起组件re-render
           </li>
           <li>
-            和一般意义上的hook（钩子）不一样，这里的hook可以多次调用且产生不同的效果，且hook随Fiber
-            Node一起生灭
+            和一般意义上的hook（钩子）不一样，这里的hook可以多次调用且产生不同的效果，且hook随
+            <Link
+              href="https://cloud.tencent.com/developer/article/2022276"
+              target="_blank"
+            >
+              Fiber Node(Link)
+            </Link>
+            一起生灭
           </li>
         </ul>
       </Paragraph>
